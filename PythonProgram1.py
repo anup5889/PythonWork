@@ -1,3 +1,10 @@
-def firstFunction():
+def printStatement():
     print "Hello World"
-firstFunction()
+printStatement()
+
+def forLoop(limit):
+    for n in range(limit):
+        print n
+
+
+forLoop(20)
