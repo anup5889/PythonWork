@@ -1,5 +1,5 @@
 
-myList=["Anup", "Anup",  "Anup", "Riddhima", "Riddhima", "Riddhima","Anup", "Amar", "Amar"]
+myList=["Anup", "Anup",  "Anup", "Rihana", "Rihana", "Rihana","Anup", "Amar", "Amar"]
 def freqCount(myList):
 
 	myDict={} # empty dictionary
