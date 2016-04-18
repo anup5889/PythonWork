@@ -1,15 +1,17 @@
 from urllib2 import Request, urlopen, URLError
 
 request = Request('http://api.openhazards.com/GetEarthquakeProbability?q=San+Francisco,+CA&m=6.8&r=100')
-request1=Request("http://api.aerisapi.com/earthquakes/closest?p=74640")
+request1=Request('http://api.openhazards.com/GetEarthquakeCatalog')
 
 try:
-	response = urlopen(request)
+	response = urlopen(request1)
 	Result = response.read()
 	print Result
 	#print kittens[559:1000]
 except URLError, e:
     print 'No kittez. Got an error code:', e
+
+
 
 
     """
