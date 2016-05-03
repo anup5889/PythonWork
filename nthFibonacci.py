@@ -22,3 +22,11 @@ def fib(n):
 print fib(4)
 
 
+def fibRecurssive(n):
+
+	if n==0 or n==1:
+		return 1
+	return fibRecurssive(n-1)+fibRecurssive(n-2)
+
+print fibRecurssive(4)
+
