@@ -30,3 +30,33 @@ def fibRecurssive(n):
 
 print fibRecurssive(4)
 
+class fibUsingMemoize:
+	def __init__(self):
+		self.memo={}
+
+	def fibUsingMemo(self,n):
+
+		if n<0:
+			raise Exception("The input should be positive integer")
+		elif n in [0,1]:
+		   return 1
+
+		if n in self.memo:
+			return self.memo[n]
+		
+		result=self.fibUsingMemo(n-1)+self.fibUsingMemo(n-2)
+		self.memo[n]=result
+
+		return result
+
+fibIns=fibUsingMemoize()
+print fibIns.fibUsingMemo(4)
+
+
+
+
+
+
+
+
+
